@@ -1,0 +1,8 @@
+Realizar una consulta que muestre los productos catalogados antes del año
+2001. Utilizar los campos NOMBRE ARTÍCULO, PRECIO, SECCIÓN, PAÍS DE
+ORIGEN y FECHA. Visualizar todos los campos utilizados. Ordenar los
+registros de resultado por el campo FECHA de forma descendente. Guardar
+la consulta con el nombre CONSULTA 9.
+
+    SELECT * FROM productos WHERE FECHA < "2001-01-01" ORDER BY FECHA DESC
+

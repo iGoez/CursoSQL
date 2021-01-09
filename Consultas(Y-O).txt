@@ -1,0 +1,32 @@
+Realizar una consulta que muestre que clientes son de Madrid, Barcelona o
+Zaragoza. Visualizar los campos: CÓDIGO CLIENTE, EMPRESA y POBLACIÓN.
+Ordenar los registros por el campo EMPRESA de forma Ascendente. Guardar
+la consulta como CONSULTA 1.
+
+    SELECT `CÓDIGO CLIENTE`,EMPRESA,POBLACIÓN FROM `clientes` WHERE POBLACIÓN = "MADRID" OR POBLACIÓN = "BARCELONA" OR POBLACIÓN = "ZARAGOZA" ORDER BY EMPRESA asc
+
+Realizar una consulta que muestre que productos son de la sección
+FERRETERÍA o DEPORTES. Visualizar los campos: CÓDIGO ARTÍCULO,
+NOMBRE, SECCIÓN y PRECIO. Ordenar los registros por el campo NOMBRE
+ARTÍCULO de forma ascendente. Guardar la consulta como CONSULTA 2.
+
+    SELECT `CÓDIGO ARTÍCULO`, `NOMBRE ARTÍCULO`, SECCIÓN, PRECIO FROM productos WHERE SECCIÓN="FERRETERÍA" OR SECCIÓN= "DEPORTES" ORDER BY `NOMBRE ARTÍCULO` asc
+
+Realizar una consulta que muestre los productos que son de la sección
+CERÁMICA y tienen un precio inferior a 40 €. Utilizar los campos NOMBRE
+ARTÍCULO, SECCIÓN y PRECIO. Como resultado de la consulta mostrar
+únicamente el campo NOMBRE ARTÍCULO. Ordenar los registros por el
+campo NOMBRE DE ARTÍCULO. Guardar la consulta con el nombre
+CONSULTA 3.
+
+    SELECT `NOMBRE ARTÍCULO` FROM productos WHERE productos.SECCIÓN="CERÁMICA" AND productos.PRECIO < 40 ORDER BY `NOMBRE ARTÍCULO` asc
+
+Realizar una consulta que muestre los productos que tengan un precio
+superior a 100 € y su país de origen sea China. Utilizar los campos NOMBRE
+ARTÍCULO, PRECIO y PAÍS DE ORIGEN. Como resultado de la consulta
+mostrar únicamente el campo NOMBRE ARTÍCULO. Ordenar los registros por
+el campo NOMBRE DE ARTÍCULO. Guardar la consulta con el nombre
+CONSULTA 4.
+
+    SELECT `NOMBRE ARTÍCULO` FROM productos WHERE productos.PRECIO > 100 AND productos.`PAÍS DE ORIGEN` = "CHINA" ORDER BY `NOMBRE ARTÍCULO` ASC
+
